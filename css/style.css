@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#303030;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 400;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    padding: 15px 0;
+}
+
+.logo{
+    height: 50px;
+}
+
+.log-header{
+    font-size: 10px;
+    display:flex;
+    align-items: center;
+    height: 60px;
+    
+}
+
+.log-header i{
+    width: 25px;
+    height: 25px;
+    font-size: 17px;
+    padding-left: 4.5px;
+    padding-top: 3px;
+    background-color: red;
+    border-radius: 25px;
+    float: left;
+    color: black;
+}
+
+.log-header i#bla{
+    width: 25px;
+    height: 25px;
+    font-size: 30px;
+    padding-left: 0px;
+    margin-top: -10px;
+    background-color: transparent;
+    border-radius: 25px;
+    float: left;
+    color: red;
+}
+
+.test-header {
+    display: flex;
+    margin-left: 8px;
+    text-transform: uppercase;
+    flex-direction: column;
+    text-align: left;
+}
+
+.test-header strong{
+    font-size: 12px;
+}
+
+.test-header a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
