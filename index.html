@@ -14,42 +14,61 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container-xxl">
             <div class="row">
-                <div class="col-md-4">
-                    <img class="logo" src="images/logo-pichau-2021-dark.png" alt="pichau">
-                </div>
+                
+                    <div class="col-md-2">
+                        <a style="display: inline-block;" href="https://www.pichau.com.br/"><img style="margin-right: 100px;" class="logo" src="images/logo-pichau-2021-dark.png" alt="pichau"></a>
+                    </div>
+                
 
-                    <div class="col-md-6 offset-md-2">
-                        <div class="log-header">
+                <div class="col-md-6 offset-md-2">  
+                    <div class="log-header">
+                        <div class="wwf">
                             <a href="#">
-                                <i class="fa fa-user"></i>
+                                <i id="user" class="fa fa-user"></i>
                                 <div class="test-header">
                                         Minha conta
                                         <br>
-                                        <strong><a class="text-decoration-a" href="#">ENTRAR</a>/<a class="text-decoration-a" href="#!">CADASTRO</a></strong>
+                                        <strong><a class="text-decoration-a" href="/login">ENTRAR </a> / <a class="text-decoration-a" href="/cadastro"> CADASTRO</a></strong>
                                 </div>
                             </a>  
-                            <span style="width: 50px;"></span><!-- just for space -->
+                        </div>
+
+                        <div class="wwf2">
                             <a href="#">
-                                <i class="fab fa-whatsapp"></i>
+                                <i style="margin-top: 5px;" class="fab fa-whatsapp"></i>
                                 <div style="text-align: center;" class="test-header">
                                         atendimento
                                         <br>
                                         <strong><a class="text-decoration-a" href="#">AO CLIENTE</a></strong>
                                 </div>
-                            </a> 
-                            <span style="width: 50px;"></span><!-- just for space -->
+                            </a>
+                        </div>
+
+                        <div class="wwf2">
                             <a href="#">
-                                <i id="bla" class="fas fa-sun"></i>
+                                <i id="dark" class="fas fa-sun"></i>
                                 <div style="text-align: center;" class="test-header">
                                         modo
                                         <br>
                                         <strong><a class="text-decoration-a" href="#">Claro</a></strong>
                                 </div>
                             </a>  
-                        </div><!-- /log-header -->
-                    </div><!-- /col-md-6 -->
+                        </div>
+                    </div><!-- /log-header -->
+                </div><!-- /col-md-6 -->
+
+                <div class="col-md-2">
+                    <div class="cart">
+                        <h2><i class="fas fa-shopping-cart"></i></h2>
+                            <div class="content-car">
+                                <h2>Carrinho</h2>
+                                <span> 23 produto</span>
+                            </div>
+                        <h2><i class="fas fa-chevron-down"></i></h2>
+                    </div>
+                </div>
             </div><!-- /row -->
         </div><!-- /container -->
     </header>

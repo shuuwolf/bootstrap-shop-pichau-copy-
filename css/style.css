@@ -28,14 +28,15 @@ header{
     display:flex;
     align-items: center;
     height: 60px;
-    
+    justify-content: flex-end;
 }
 
-.log-header i{
+.log-header a i{
     width: 25px;
     height: 25px;
     font-size: 17px;
     padding-left: 4.5px;
+    margin-right: 8px;
     padding-top: 3px;
     background-color: red;
     border-radius: 25px;
@@ -43,12 +44,25 @@ header{
     color: black;
 }
 
-.log-header i#bla{
+.log-header a i#user{
+    width: 25px;
+    height: 25px;
+    font-size: 17px;
+    padding-left: 4.5px;
+    padding-top: 3px;
+    margin-top: 5px;
+    background-color: red;
+    border-radius: 25px;
+    float: left;
+    color: black;
+}
+
+.log-header i#dark{
     width: 25px;
     height: 25px;
     font-size: 30px;
     padding-left: 0px;
-    margin-top: -10px;
+    margin-top: 0px;
     background-color: transparent;
     border-radius: 25px;
     float: left;
@@ -57,7 +71,6 @@ header{
 
 .test-header {
     display: flex;
-    margin-left: 8px;
     text-transform: uppercase;
     flex-direction: column;
     text-align: left;
@@ -70,6 +83,62 @@ header{
 .test-header a{
     text-decoration: none;
     color: white;
+}
+
+div.wwf{
+    width: 150px;
+}
+
+div.wwf2{
+    width: 100px;
+    margin-left:30px;
+}
+
+div.cart{
+    display: flex;
+    width: 200px;
+    height: 60px;
+    background:green;
+    border: 1px solid green;
+    border-radius: 5px;
+    float: right;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+div.cart h2{
+    line-height: 50px;
+    font-size: 23px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+div.cart .content-car h2{
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+    text-transform:uppercase;
+    line-height: 40px;
+}
+
+div.cart .content-car span{
+    position: relative;
+    top: -10px;
+    left: 20px;
+}
+
+@media screen and (max-width:1200px){
+    .log-header{
+        font-size: 10px;
+        display:flex;
+        align-items: center;
+        height: 60px;
+        justify-content: center;
+    }
+
+    div.wwf2{
+        margin-left: 20px;
+    }
 }
 
 
