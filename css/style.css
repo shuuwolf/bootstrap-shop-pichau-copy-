@@ -9,6 +9,7 @@ body{
     font-family: 'Roboto', sans-serif;
     color: white;
     font-weight: 400;
+    height: 4000px;
 }
 
 .clear{
@@ -29,6 +30,8 @@ header{
     align-items: center;
     height: 60px;
     justify-content: flex-end;
+    position: relative;
+    right: 50px;
 }
 
 .log-header a i{
@@ -96,7 +99,7 @@ div.wwf2{
 
 div.cart{
     display: flex;
-    width: 200px;
+    width: 220px;
     height: 60px;
     background:green;
     border: 1px solid green;
@@ -104,6 +107,11 @@ div.cart{
     float: right;
     justify-content: space-between;
     padding: 5px;
+}
+
+div.cart:hover{
+    cursor: pointer;
+    background-color: #006E1D;
 }
 
 div.cart h2{
@@ -127,17 +135,147 @@ div.cart .content-car span{
     left: 20px;
 }
 
-@media screen and (max-width:1200px){
-    .log-header{
-        font-size: 10px;
-        display:flex;
-        align-items: center;
-        height: 60px;
-        justify-content: center;
-    }
+button.btn-product{
+    width: 100%;
+    background-color: brown;
+    border: none;
+    border-radius: 5px;
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
+button.btn-product span strong{
+    font-size: 18px;
+}
+
+button.btn-product h2{
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.input-ctrl{
+    background: #424242;
+    height: 40px;
+    position: relative;
+    top: 10px;
+    border-radius: 5px;
+}
+
+.input-ctrl h2{
+    float: right;
+    font-size: 16px;
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+.input-ctrl input{
+    width: 90%;
+    background: #424242;
+    color: #ccc;
+    border: none;
+    margin-top: 8px;
+    outline: none;
+    padding-left: 8px;
+}
+
+.input-ctrl input:focus{
+    border: 0;
+}
+
+.input-ctrl input:active{
+    border: 0;
+}
+
+section.bg-top{
+    background: #222;
+}
+
+section.bg-top .img-bg{
+    background-image:url('/images/bg-site-arraia2021.jpg');
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    height: 450px;
+}
+
+section.boxes{
+    padding: 30px 0;
+}
+
+section.boxes .box-content{
+    display: flex;
+    height: 140px;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section.boxes .box-content span{
+    font-size: 12px;
+ }
+
+section.boxes .box-content span strong{
+   font-size: 25px;
+}
+
+section.boxes .box-content h2.img-box{
+    height: 140px;
+    line-height: 150px;
+    font-size: 50px;
+    width: 40%;
+    text-align: center;
+    position: relative;
+    top: 4px;
+    left: -1px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.box-content span{
+    text-align: center;
+    width: 60%;
+}
+
+.gamer{
+    background-color: black;
+}
+
+.work-station{
+    background-color: #133275;
+}
+
+.work-station .img-box{
+    background-color: #345AAD;
+}
+
+.home{
+    background-color: #1E4611;
+}
+
+.home .img-box{
+    background-color: #33751E;
+}
+
+.config{
+    background-color: red;
+}
+
+@media screen and (max-width:1250px){
     div.wwf2{
         margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:991px){
+    section.boxes .box-content{
+        margin-top: 20px;
     }
 }
 
