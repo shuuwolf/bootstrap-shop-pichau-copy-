@@ -12,9 +12,15 @@ body{
     height: 4000px;
 }
 
+.container{
+    max-width: 1500px;
+}
+
 .clear{
     clear: both;
 }
+
+/*** HEADER ***/
 
 header{
     padding: 15px 0;
@@ -191,6 +197,10 @@ button.btn-product h2{
     border: 0;
 }
 
+/*End Header*/
+
+/*** Sessao top ***/
+
 section.bg-top{
     background: #222;
 }
@@ -198,7 +208,7 @@ section.bg-top{
 section.bg-top .img-bg{
     background-image:url('/images/bg-site-arraia2021.jpg');
     background-position: center;
-    background-size: auto 100%;
+background-size: auto 100%;
     background-repeat: no-repeat;
     height: 450px;
 }
@@ -210,6 +220,7 @@ section.boxes{
 section.boxes .box-content{
     display: flex;
     height: 140px;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
@@ -266,6 +277,67 @@ section.boxes .box-content h2.img-box{
 .config{
     background-color: red;
 }
+
+/*End sessao topo*/
+
+/*** Section New Products ***/
+
+section.new_products{
+    padding: 30px 0;
+}
+
+section.new_products .header-product h2{
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+section.new_products .header-product h2 i{
+    color: red;
+    margin-right: 10px;
+}
+
+section.new_products .item-product{
+    max-width: 240px;
+}
+
+section.new_products .item-product img{
+    width: 100%;
+}
+
+section.new_products .item-product .item-detail{
+    width: 100%;
+    padding: 15px;
+}
+
+section.new_products .item-product .item-detail h2{
+    width: 100%;
+    font-size: 18px;
+    margin: 0;
+}
+
+section.new_products .item-product .item-detail span{
+    width: 100%;
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+section.new_products .item-product .item-detail div.line{
+    height: 2px;
+    background-color: red;
+    width: 30px;
+    margin: 10px 0;
+}
+
+section.new_products .item-product .item-detail p{
+    width: 100%;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+
+/*** Media Queries ***/
 
 @media screen and (max-width:1250px){
     div.wwf2{
