@@ -1,0 +1,7 @@
+IDEIA NOVA
+
+colocar cada box em uma col(com respectiva media query) deixando:
+-6 para telas muito grandes
+-4 para telas grandes
+-3 para telas medias
+-2 para celulares

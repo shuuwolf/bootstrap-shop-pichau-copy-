@@ -303,6 +303,14 @@ section.new_products .item-product{
 
 section.new_products .item-product img{
     width: 100%;
+    opacity: 0.5;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+section.new_products .item-product img:hover{
+    width: 100%;
+    opacity: 1;
 }
 
 section.new_products .item-product .item-detail{
