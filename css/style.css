@@ -282,65 +282,83 @@ section.boxes .box-content h2.img-box{
 
 /*** Section New Products ***/
 
-section.new_products{
+section.products{
     padding: 30px 0;
 }
 
-section.new_products .header-product h2{
+section.products .header-product h2{
     padding: 10px;
     text-transform: uppercase;
     font-size: 25px;
 }
 
-section.new_products .header-product h2 i{
+section.products .header-product h2 i{
     color: red;
     margin-right: 10px;
 }
 
-section.new_products .item-product{
-    max-width: 240px;
+section.products .item-product{
+    width: 100%;
+    margin-top: 20px;
 }
 
-section.new_products .item-product img{
+section.products .item-product img{
     width: 100%;
-    opacity: 0.5;
-    transition: 0.6s;
+    opacity: 0.7;
+    transition: 0.3s;
     cursor: pointer;
 }
 
-section.new_products .item-product img:hover{
+section.products .item-product img:hover{
     width: 100%;
     opacity: 1;
 }
 
-section.new_products .item-product .item-detail{
+section.products .item-product .item-detail{
     width: 100%;
     padding: 15px;
 }
 
-section.new_products .item-product .item-detail h2{
+section.products .item-product .item-detail h2{
     width: 100%;
     font-size: 18px;
     margin: 0;
 }
 
-section.new_products .item-product .item-detail span{
+section.products .item-product .item-detail span{
     width: 100%;
     font-size: 18px;
     margin-top: 0px;
 }
 
-section.new_products .item-product .item-detail div.line{
+section.products .item-product .item-detail div.line{
     height: 2px;
     background-color: red;
     width: 30px;
     margin: 10px 0;
 }
 
-section.new_products .item-product .item-detail p{
+section.products .item-product .item-detail p{
     width: 100%;
     font-size: 12px;
     margin: 0;
+}
+
+.product-history{
+    margin-left: 20px;
+    max-width: 130px;
+}
+
+.product-history img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+/*** PRE FOOTER ***/
+
+section.pre-footer{
+    padding: 30px 0;
+    background:#1F2023;
 }
 
 
