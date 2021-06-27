@@ -21,7 +21,9 @@ body{
 }
 
 /*** HEADER ***/
-
+header.mobile{
+    display: none;
+}
 header{
     padding: 15px 0;
 }
@@ -199,6 +201,59 @@ button.btn-product h2{
 
 /*End Header*/
 
+/*** HEADER MOBILE ***/
+
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 10px 0px;
+}
+
+.header-flex h2{
+    margin: 0;
+}
+
+.header-flex a{
+    text-align: center;
+    display: inline;
+}
+
+.header-right-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 10px;
+}
+
+.sun-mobile h2{
+    font-size: 20px;
+}
+
+.cart-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 10px;
+}
+
+.cart-mobile h2{
+    font-size: 18px;
+    margin-left:10px;
+}
+
 /*** Sessao top ***/
 
 section.bg-top{
@@ -208,7 +263,7 @@ section.bg-top{
 section.bg-top .img-bg{
     background-image:url('/images/bg-site-arraia2021.jpg');
     background-position: center;
-background-size: auto 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 450px;
 }
@@ -283,7 +338,7 @@ section.boxes .box-content h2.img-box{
 /*** Section New Products ***/
 
 section.products{
-    padding: 30px 0;
+    padding: 30px;
 }
 
 section.products .header-product h2{
@@ -361,6 +416,104 @@ section.pre-footer{
     background:#1F2023;
 }
 
+section.pre-footer .atendimento{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #3A3A3D;
+    height: 90px;
+    border-radius: 5px;
+}
+
+section.pre-footer .atendimento .horario-loja-virtual{
+    display:flex;;
+    align-items: center;
+    margin-top: 10px;
+}
+
+section.pre-footer .atendimento .horario-loja-virtual i{
+    color: red;
+}
+
+section.pre-footer .atendimento .horario-loja-virtual h3{
+    background-color: white;
+    display: inline;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.pre-footer .atendimento .horario-loja-virtual p{
+    margin:0;
+}
+
+section.pre-footer .atendimento .horario-loja-virtual p strong{
+    height: 10px;
+}
+
+section.pre-footer .atendimento .horario-loja-virtual a{
+    text-decoration: none;
+    color: white;
+}
+
+section.pre-footer .location{
+    background: #E90313;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+}
+
+section.pre-footer .location h2{
+    font-size: 22px;
+}
+
+section.pre-footer .location h3{
+    background-color: white;
+    display: inline;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.pre-footer .location i{
+    color: red;
+}
+
+section.pre-footer .location div.line{
+    height: 50px;
+    width: 2px;
+    background-color: white;
+    margin: 0 5px;
+}
+
+section.pre-footer .location .atendimento-hrs p{
+    font-size: 14px;
+    margin:0;
+}
+
+.between-section{
+    position: relative;
+    top: -75px;
+}
+
+/*** FOOTER ***/
+
+footer{
+    height: 300px;
+    background: #000000;
+}
+
 
 
 /*** Media Queries ***/
@@ -375,7 +528,70 @@ section.pre-footer{
     section.boxes .box-content{
         margin-top: 20px;
     }
+    section.pre-footer .atendimento{
+        justify-content: space-evenly;
+        height: auto;
+        padding: 10px 2%;
+        margin-bottom: 10px;
+    }
 }
 
+@media screen and (max-width:960px){ /*MOBILE*/
+    header.desktop{
+        display: none;
+    }
+
+    header.mobile{
+        display: block;
+    }
+
+    section.bg-top .img-bg{
+        background-size: 100% 100%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:600px){
+    section.pre-footer .atendimento{
+        justify-content:center;
+        padding: 10px 0px;
+    }
+
+    section.pre-footer .location{
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 10px 10px;
+    }
+
+    section.pre-footer .location div.line{
+        display: none;
+    }
+
+    section.pre-footer .location .atendimento-hrs{
+        padding-top: 20px;
+    }
+
+    section.pre-footer .location .atendimento-hrs p{
+        font-size: 12px;
+        margin:0;
+    }
+
+    section.pre-footer .location h2{
+        font-size: 18px;
+    }
+
+    section.pre-footer .atendimento .horario-loja-virtual p{
+        font-size: 14px;
+        max-width: 120px;
+    }
+
+    .between-section{
+        position: relative;
+        top: -75px;
+        margin: 0 2%;
+    }
+}
 
 
