@@ -261,7 +261,7 @@ section.bg-top{
 }
 
 section.bg-top .img-bg{
-    background-image:url('/images/bg-site-arraia2021.jpg');
+    background-image:url('images/bg-site-arraia2021.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
