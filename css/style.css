@@ -273,7 +273,7 @@ section.bg-top{
 section.bg-top .img-bg{
     background-image:url("../images/bg-site-arraia2021.jpg");
     background-position: center;
-    background-size: contain;
+    background-size: auto 100%;
     background-repeat: no-repeat;
     height: 450px;
 }
@@ -445,7 +445,7 @@ section.pre-footer .atendimento{
 }
 
 section.pre-footer .atendimento .horario-loja-virtual{
-    display:flex;;
+    display:flex;
     align-items: center;
     margin-top: 10px;
 }
@@ -525,6 +525,113 @@ section.pre-footer .location .atendimento-hrs p{
     top: -75px;
 }
 
+.links-uteis{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px 15px 15px;
+}
+
+.link-footer-title{
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.links-uteis .pre-footer-menu ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.links-uteis .pre-footer-menu ul li{
+    text-align: left;
+    margin-top: 10px;
+}
+
+.links-uteis .pre-footer-menu ul li a{
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.pre-footer .line{
+    width: 10px;
+    height: 2px;
+    background: red;
+    margin-bottom: 1rem;
+}
+
+.pagamento{
+    padding: 15px;
+}
+
+.pagamento ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.pagamento li{
+    width: 45%;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.pagamento li img{
+    width: 100%;
+    padding: 0;
+}
+
+.newsletter{
+    padding: 15px;
+}
+
+.newsletter form{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.newsletter .input-ctrl{
+    width: 90%;
+    padding:7px 0;
+    background: white;
+}
+
+.newsletter .input-ctrl input{
+    width: 100%;
+    margin: 0;
+    background: white;
+}
+
+.newsletter .input-ctrl input::placeholder{
+    color: black;
+    font-weight: normal;
+}
+
+.newsletter .btn-newsletter button{
+    border: none;
+    width: 100%;
+    padding: 13px;
+    background: white;
+    margin-top: 5px;
+    position: relative;
+    left: -5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.newsletter .btn-newsletter button i{
+    font-size: 18px;
+
+}
+
 /*** FOOTER ***/
 
 footer{
@@ -564,15 +671,34 @@ footer{
     }
 
     section.bg-top .img-bg{
-        background-size: 100% 100%;
+        background-size: auto 100%;
         height: 300px;
+    }
+
+    .product-history{
+        margin-left: 10px;
+        max-width: 100px;
     }
 }
 
 @media screen and (max-width:600px){
+    .logo{
+        height: 40px;
+    }
+
     section.pre-footer .atendimento{
         justify-content:center;
         padding: 10px 0px;
+    }
+
+    section.pre-footer .atendimento > div{
+        width: 100%;
+        display: block;
+        justify-content: center;
+    }
+
+    section.pre-footer .atendimento div.horario-loja-virtual p{
+        max-width: none;
     }
 
     section.pre-footer .location{
@@ -581,6 +707,11 @@ footer{
         justify-content: space-evenly;
         flex-wrap: wrap;
         padding: 10px 10px;
+    }
+
+    section.bg-top .img-bg{
+        background-size: auto 100%;
+        height: 250px;
     }
 
     section.pre-footer .location div.line{
@@ -609,6 +740,39 @@ footer{
         position: relative;
         top: -75px;
         margin: 0 2%;
+    }
+
+    .product-history{
+        margin-left: 0px;
+        max-width: 80px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .logo{
+        height: 30px;
+    }
+
+    section.pre-footer .location{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    section.pre-footer .location > div{
+        width: 100%;
+        display: flex;
+        max-width: none;
+        justify-content: center;
+    }
+
+    section.pre-footer .location > div.atendimento-hrs{
+        width: 100%;
+        display: block;
+        max-width: none;
+        justify-self: center;
+        text-align: center;
     }
 }
 
