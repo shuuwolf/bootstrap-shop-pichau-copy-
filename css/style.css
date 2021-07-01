@@ -25,7 +25,7 @@ header.mobile{
     display: none;
 }
 header{
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
 .logo{
@@ -153,10 +153,13 @@ button.btn-product{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: right;
 }
 
 button.btn-product span strong{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 button.btn-product h2{
@@ -167,17 +170,17 @@ button.btn-product h2{
 
 .input-ctrl{
     background: #424242;
-    height: 40px;
+    height: 50px;
     position: relative;
-    top: 10px;
+    top: 5px;
     border-radius: 5px;
 }
 
-.input-ctrl h2{
+.input-ctrl h2{/***SEARCH ICON***/
     float: right;
     font-size: 16px;
     position: relative;
-    top: 10px;
+    top: 15px;
     right: 10px;
 }
 
@@ -189,6 +192,13 @@ button.btn-product h2{
     margin-top: 8px;
     outline: none;
     padding-left: 8px;
+    position: relative;
+    top: 5px;
+}
+
+.input-ctrl input::placeholder{
+    color: rgb(143, 143, 143);
+    font-weight: bold;
 }
 
 .input-ctrl input:focus{
@@ -261,9 +271,9 @@ section.bg-top{
 }
 
 section.bg-top .img-bg{
-    background-image:url('images/bg-site-arraia2021.jpg');
+    background-image:url("../images/bg-site-arraia2021.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     height: 450px;
 }
@@ -295,7 +305,7 @@ section.boxes .box-content h2.img-box{
     height: 140px;
     line-height: 150px;
     font-size: 50px;
-    width: 40%;
+    width: 35%;
     text-align: center;
     position: relative;
     top: 4px;
@@ -306,11 +316,15 @@ section.boxes .box-content h2.img-box{
 
 .box-content span{
     text-align: center;
-    width: 60%;
+    width: 65%;
 }
 
 .gamer{
     background-color: black;
+}
+
+.gamer .img-box{
+    background-color: #202020;
 }
 
 .work-station{
@@ -331,6 +345,10 @@ section.boxes .box-content h2.img-box{
 
 .config{
     background-color: red;
+}
+
+.config .img-box{
+    background-color:#C2281E;
 }
 
 /*End sessao topo*/
