@@ -114,7 +114,7 @@ div.cart{
     border-radius: 5px;
     float: right;
     justify-content: space-between;
-    padding: 5px;
+    padding: 10px;
 }
 
 div.cart:hover{
@@ -123,24 +123,24 @@ div.cart:hover{
 }
 
 div.cart h2{
-    line-height: 50px;
-    font-size: 23px;
-    margin-left: 5px;
-    margin-right: 5px;
+    line-height: 40px;
+    font-size: 20px;
 }
 
 div.cart .content-car h2{
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     font-weight: bold;
     text-transform:uppercase;
-    line-height: 40px;
+    line-height: 30px;
+    text-align: right;
 }
 
 div.cart .content-car span{
     position: relative;
     top: -10px;
     left: 20px;
+    font-size: 13px;
 }
 
 button.btn-product{
@@ -430,7 +430,7 @@ section.products .item-product .item-detail p{
 /*** PRE FOOTER ***/
 
 section.pre-footer{
-    padding: 30px 0;
+    padding: 30px 0px 0px 0px;
     background:#1F2023;
 }
 
@@ -456,14 +456,12 @@ section.pre-footer .atendimento .horario-loja-virtual i{
 
 section.pre-footer .atendimento .horario-loja-virtual h3{
     background-color: white;
-    display: inline;
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    margin: 0px 10px 0px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
+    margin-right: 8px;
 }
 
 section.pre-footer .atendimento .horario-loja-virtual p{
@@ -525,15 +523,19 @@ section.pre-footer .location .atendimento-hrs p{
     top: -75px;
 }
 
+/***Links Uteis(institucional, duvidas e ajuda)***/
+
 .links-uteis{
     display: flex;
     justify-content: space-between;
     padding: 15px 40px 15px 15px;
+    position: relative;
+    top: -40px;
 }
 
 .link-footer-title{
     color: red;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     padding-bottom: 1rem;
     text-transform: uppercase;
@@ -562,8 +564,12 @@ section.pre-footer .location .atendimento-hrs p{
     margin-bottom: 1rem;
 }
 
+/***PAGAMENTO***/
+
 .pagamento{
-    padding: 15px;
+    padding: 15px 0px;
+    position: relative;
+    top: -40px;
 }
 
 .pagamento ul{
@@ -571,7 +577,8 @@ section.pre-footer .location .atendimento-hrs p{
     flex-wrap: wrap;
     justify-content: space-between;
     list-style-type: none;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .pagamento li{
@@ -588,8 +595,16 @@ section.pre-footer .location .atendimento-hrs p{
     padding: 0;
 }
 
+/***NEWSLETTER***/
+
 .newsletter{
     padding: 15px;
+    position: relative;
+    top: -40px;
+}
+
+.newsletter p{
+    font-size: 14px;
 }
 
 .newsletter form{
@@ -632,12 +647,74 @@ section.pre-footer .location .atendimento-hrs p{
 
 }
 
+/***NEWSLETTER - Social media***/
+
+.social-media{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 8px;
+    margin: 15px 0;
+}
+
+.social-media p{
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.social-media h2{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 8px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.social-media h2:hover{
+    background-color: red;
+}
+
+.social-media h2:hover > i{
+    color: white;
+}
+
+.social-media h2 i{
+    color: red;
+    font-size: 25px;
+}
+
 /*** FOOTER ***/
 
 footer{
-    height: 300px;
+    padding: 50px 0;
     background: #000000;
 }
+
+footer .copyright{
+    display: flex;
+    align-items: center;
+}
+
+footer .copyright div img{
+    width: 90%;
+}
+
+.copyright-text h2{
+    color: red;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+}
+
+.copyright-text span{
+    color: white;
+    font-size: 14px;
+}
+
 
 
 
@@ -646,6 +723,28 @@ footer{
 @media screen and (max-width:1250px){
     div.wwf2{
         margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .pagamento{
+        top: 0px;
+    }
+    
+    .pagamento ul{
+        justify-content: space-between;
+    }
+    
+    .pagamento li{
+        width: 18%;
+        margin-top: 8px;
+        margin-bottom: 0;
+    }
+
+    .newsletter{
+        padding: 15px;
+        position: relative;
+        top: 0px;
     }
 }
 
@@ -658,6 +757,12 @@ footer{
         height: auto;
         padding: 10px 2%;
         margin-bottom: 10px;
+    }
+
+    .pagamento li{
+        width: 30%;
+        margin-top: 10px;
+        margin-bottom: 0;
     }
 }
 
@@ -681,7 +786,7 @@ footer{
     }
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:580px){
     .logo{
         height: 40px;
     }
@@ -745,6 +850,23 @@ footer{
     .product-history{
         margin-left: 0px;
         max-width: 80px;
+    }
+
+    .social-media{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-media p{
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .pagamento li{
+        width: 18%;
+        margin-top: 10px;
+        margin-bottom: 0;
     }
 }
 
