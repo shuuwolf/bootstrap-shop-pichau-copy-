@@ -20,6 +20,32 @@ body{
     clear: both;
 }
 
+.button-to-top{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+.button-to-top a{
+    color: white;
+    text-decoration: none;
+}
+
+.button-to-top h3{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+
+
 /*** HEADER ***/
 header.mobile{
     display: none;
@@ -305,7 +331,7 @@ section.boxes .box-content h2.img-box{
     height: 140px;
     line-height: 150px;
     font-size: 50px;
-    width: 35%;
+    width: 28%;
     text-align: center;
     position: relative;
     top: 4px;
@@ -378,12 +404,11 @@ section.products .item-product{
 section.products .item-product img{
     width: 100%;
     opacity: 0.7;
-    transition: 0.3s;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 section.products .item-product img:hover{
-    width: 100%;
     opacity: 1;
 }
 
@@ -402,6 +427,11 @@ section.products .item-product .item-detail span{
     width: 100%;
     font-size: 18px;
     margin-top: 0px;
+}
+
+section.products .item-product .item-detail span strong{
+    font-size: 24px;
+    color: rgb(91, 175, 6);
 }
 
 section.products .item-product .item-detail div.line{
@@ -557,6 +587,10 @@ section.pre-footer .location .atendimento-hrs p{
     font-size: 14px;
 }
 
+.links-uteis .pre-footer-menu ul li a:hover{
+    text-decoration: underline;
+}
+
 .pre-footer .line{
     width: 10px;
     height: 2px;
@@ -693,13 +727,20 @@ footer{
     background: #000000;
 }
 
-footer .copyright{
+footer .copyright-img{
+    width: 100%;
+    height: 100%;
+    padding: 0px 10px 10px 10px;
     display: flex;
     align-items: center;
 }
 
-footer .copyright div img{
+footer .copyright-img img{
     width: 90%;
+}
+
+.copyright-text{
+   padding: 32px 16px 16px;
 }
 
 .copyright-text h2{
@@ -715,6 +756,61 @@ footer .copyright div img{
     font-size: 14px;
 }
 
+.copyright-text div.line{
+    background-color: red;
+    width: 18px;
+    height: 2px;
+    margin: 18px 0;
+}
+
+.copyright-text p{
+    color: rgb(119, 119, 119);
+    font-size: 13px;
+}
+
+.copyright-text p strong{
+    color: rgb(255, 0, 0);
+}
+
+/*** Certificados ***/
+.certificado{
+    padding: 32px 16px 16px;
+}
+
+.certificado h3{
+    color: red;
+    font-size:15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.certificado div.line{
+    background-color: red;
+    width: 18px;
+    height: 2px;
+    margin: 18px 0;
+}
+
+.certificados-img{
+    background-color: white;
+    border-radius:5px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.certificados-img a{
+    padding: 0.5rem;
+}
+
+.certificados-img img{
+    height: 80%;
+    max-width: 120px;
+}
+
+
+
 
 
 
@@ -726,7 +822,7 @@ footer .copyright div img{
     }
 }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1199px){
     .pagamento{
         top: 0px;
     }
@@ -745,6 +841,30 @@ footer .copyright div img{
         padding: 15px;
         position: relative;
         top: 0px;
+    }
+
+    .certificado h3{
+        text-align: center;
+    }
+    
+    .certificado div.line{
+        margin: 18px auto;
+    }
+
+    footer .copyright-img{
+        justify-content: center;
+    }
+
+    footer .copyright-img img{
+        width: 20%;
+    }
+
+    .copyright-text{
+        text-align: center;
+    }
+
+    .copyright-text div.line{
+        margin: 18px auto;
     }
 }
 
@@ -789,6 +909,10 @@ footer .copyright div img{
 @media screen and (max-width:580px){
     .logo{
         height: 40px;
+    }
+
+    section.products{
+        padding: 0px;
     }
 
     section.pre-footer .atendimento{
@@ -868,6 +992,15 @@ footer .copyright div img{
         margin-top: 10px;
         margin-bottom: 0;
     }
+
+    .certificados-img{
+        flex-wrap: wrap;
+    }
+
+    .certificados-img img{
+        height: 100%;
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width:400px){
@@ -895,6 +1028,10 @@ footer .copyright div img{
         max-width: none;
         justify-self: center;
         text-align: center;
+    }
+
+    .links-uteis .pre-footer-menu ul{
+        margin-left: 5px;
     }
 }
 

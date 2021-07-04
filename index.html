@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css" integrity="sha512-3icgkoIO5qm2D4bGSUkPqeQ96LS8+ukJC7Eqhl1H5B2OJMEnFqLmNDxXVmtV/eq5M65tTDkUYS/Q0P4gvZv+yA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="desktop">
+    <header id="top" class="desktop">
         <div class="container-xxl">
             <div class="row">
                 <div class="col-md-2">
@@ -91,7 +91,7 @@
         </div><!-- /container -->
     </header>
 
-    <header class="mobile">
+    <header id="top" class="mobile">
         <div class="container-xxl">
             <div class="row">
                 <div class="col-md-12">
@@ -713,7 +713,7 @@
                 <div class="col-xl-8">
                     <div class="atendimento between-section">
                         <div class="horario-loja-virtual">
-                            <h3><i class="far fa-clock"></i></h3>
+                            <div><h3><i class="far fa-clock"></i></h3></div>
                             <p><strong>Atendimento Loja Virtual</strong><br>
                             Segunda a sexta <strong>8h às 12h</strong> e das <strong>14h às 18h</strong></p>
                         </div><!-- /horario-loja-virtual -->
@@ -732,7 +732,7 @@
 
                 <div class="col-xl-4">
                     <div class="location between-section">
-                        <div style="display:flex;">
+                        <div style="display:flex;align-items: center;">
                             <h3><i class="fas fa-home"></i></h3>
                             <h2><strong>Loja física<br> em Joinville</strong></h2>
                         </div>
@@ -826,9 +826,14 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-xl-2 col-lg-12">
+                    <div class="copyright-img">
+                        <img src="images/logo-pichau-2021-dark (1).png" alt="Pichau Logo">
+                    </div><!-- /copyright-img -->
+                </div><!-- /col -->
+
+                <div class="col-xl-5 col-lg-12">
                     <div class="copyright">
-                        <div><img src="images/logo-pichau-2021-dark (1).png" alt="Pichau Logo"></div>
                         <div class="copyright-text">
                             <h2>Pichau informática&copysr; é uma marca registrada de bazam e pichau informatica ltda | CNPJ:99.999.999/9999-99</h2>
                             <span>Rua Ottokar Doerffel, 1112 - Galpão C8 - Bairro: Atiradores - CEP:89203-212 - Joinville/SC</span>
@@ -841,9 +846,26 @@
                         </div><!-- /copyright-text -->
                     </div><!-- /copyright -->
                 </div><!-- /col -->
+
+                <div class="col-xl-5 col-lg-12">
+                    <div class="certificado">
+                       <h3>Certificados de segurança</h3>
+                       <div class="line"></div>
+                        <div class="certificados-img">
+                            <a href="#"><img src="images/ssl.png" alt="SSL"></a>
+                            <a href="#"><img src="images/pichau-google.png" alt="Pichau Google"></a>
+                            <a href="#"><img src="images/img_6261.png" alt="Pichau EBIT"></a>
+                            <a href="#"><img src="images/gcr_logo_stacked.png" alt="Google Avaliações do consumidor"></a>
+                        </div><!-- /certificados-img -->
+                    </div><!-- /certificado -->
+                </div><!-- /col -->
             </div><!-- /row -->
         </div><!-- /container -->
     </footer>
+
+    <div class="button-to-top">
+        <a href="#top"><h3><i class="fas fa-arrow-up"></i></h3></a>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
