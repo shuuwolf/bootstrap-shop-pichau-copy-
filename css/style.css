@@ -131,9 +131,9 @@ div.wwf2{
     margin-left:30px;
 }
 
-div.cart{
+button.cart{
     display: flex;
-    width: 220px;
+    width: 210px;
     height: 60px;
     background:green;
     border: 1px solid green;
@@ -141,19 +141,20 @@ div.cart{
     float: right;
     justify-content: space-between;
     padding: 10px;
+    color: white;
 }
 
-div.cart:hover{
+button.cart:hover{
     cursor: pointer;
     background-color: #006E1D;
 }
 
-div.cart h2{
+button.cart h2{
     line-height: 40px;
     font-size: 20px;
 }
 
-div.cart .content-car h2{
+button.cart .content-car h2{
     font-size: 18px;
     margin: 0;
     font-weight: bold;
@@ -162,10 +163,10 @@ div.cart .content-car h2{
     text-align: right;
 }
 
-div.cart .content-car span{
+button.cart .content-car span{
     position: relative;
     top: -10px;
-    left: 20px;
+    left: 10px;
     font-size: 13px;
 }
 

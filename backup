@@ -5,3 +5,9 @@ colocar cada box em uma col(com respectiva media query) deixando:
 -4 para telas grandes
 -3 para telas medias
 -2 para celulares
+
+Pegar os hotsite da pichau e recria-los para treinar manipulação e para criar o slide
+igual do site original.
+
+Ver como faz para implementar apenas uma parte no site, sem precisar ficar recriando tudo denovo
+talvez ajax?
