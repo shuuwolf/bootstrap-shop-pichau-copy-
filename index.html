@@ -14,8 +14,59 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css" integrity="sha512-3icgkoIO5qm2D4bGSUkPqeQ96LS8+ukJC7Eqhl1H5B2OJMEnFqLmNDxXVmtV/eq5M65tTDkUYS/Q0P4gvZv+yA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- MENU OFF CANVA -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <a href="https://www.pichau.com.br/"><img class="logo" src="images/logo-pichau-2021-dark.png" alt="pichau"></a>
+          <button style="color: white;" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="mount">
+                <a class="mount-link" href="#">
+                    <i class="fas fa-wrench"></i>
+                    <span>Monte sua Configuração</span>
+                </a><!-- /mount-link -->
+            </div><!-- /mount -->
+            <h6>CATEGORIAS</h6>
+                <ul class="categorias_offnav">
+                    <li class="list_offnav">
+                        <a href="">
+                            <div class="item_offnav">
+                                <span>Hardware</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div><!-- /item_offnav -->
+                        </a>
+                    </li><!-- /list_offnav -->
+
+                    <div class="hardware">
+                        <div class="offnav_container">
+
+                        </div><!-- /offnav_container -->
+                    </div><!-- /hardware -->
+
+                    <li class="list_offnav">
+                        <a href="">
+                            <div class="item_offnav">
+                                <span>Periféricos</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div><!-- /item_offnav -->
+                        </a>
+                    </li><!-- /list_offnav -->
+
+                    <li class="list_offnav">
+                        <a href="">
+                            <div class="item_offnav">
+                                <span>Computadores</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div><!-- /item_offnav -->
+                        </a>
+                    </li><!-- /list_offnav -->
+                </ul><!-- /categorias_offnav -->  
+        </div><!-- /offcanvas-body -->
+      </div><!-- /offcanvas -->
+
     <header id="top" class="desktop">
-        <div class="container-xxl">
+        <div class="container">
             <div class="row">
                 <div class="col-md-2">
                     <a href="https://www.pichau.com.br/"><img class="logo" src="images/logo-pichau-2021-dark.png" alt="pichau"></a>
@@ -63,7 +114,7 @@
                         <h2><i class="fas fa-shopping-cart"></i></h2>
                             <div class="content-car">
                                 <h2>Carrinho</h2>
-                                <span> 23 produtos</span>
+                                <span> 2 produtos</span>
                             </div>
                         <h2><i class="fas fa-chevron-down"></i></h2>
                     </button>
@@ -72,7 +123,7 @@
 
             <div class="row">
                 <div class="col-md-3">
-                    <button class="btn-product">
+                    <button class="btn-product" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                         <h2><i class="fas fa-bars"></i></h2>
                         <span>Acesse Todos os
                             <br>
@@ -93,7 +144,7 @@
     </header>
 
     <header id="top" class="mobile">
-        <div class="container-xxl">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="header-flex">
@@ -122,6 +173,16 @@
             </div>
         </div><!-- /container -->
     </header>
+
+    <section class="cart_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="myCar" class="meu_carrinho"></div>
+                </div><!-- /col -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </section><!-- /cart_bg -->
 
     <section id="bg_top" class="bg-top">
         <div class="img-bg"></div>

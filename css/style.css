@@ -44,6 +44,87 @@ body{
     margin: 0;
 }
 
+/***MENU OFFCANVA***/
+
+.offcanvas{
+    max-width: 300px;
+    background:#424242;
+}
+
+.offcanvas-header{  /*RESET*/
+    padding: 0;
+}
+
+.offcanvas-header a{
+    margin: 10px 0px 10px 16px;
+}
+
+.offcanvas-body{  /*RESET*/
+    padding: 0;
+}
+
+.offcanvas-body h6{
+    font-size:13px;
+    padding: 0px 16px;
+    height: 30px;
+    margin: 0;
+    line-height: 30px;
+}
+
+.btn-close {
+    color: white;
+    background: url(../images/times-solid.png) center/1em auto no-repeat;
+    position: relative;
+    right: 15px;
+}
+
+.mount{
+    margin-top:-10px;
+    width: 100%;
+    padding: 8px 16px;
+}
+
+.mount:hover{
+    background: #222222;
+}
+
+.mount:hover > .mount-link:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.mount-link{
+    color: white;
+    text-decoration: none;
+    padding: 8px 0px;
+    display: block;
+    margin-top: 7px;
+}
+
+ul.categorias_offnav{
+    padding: 8px 0px;
+    margin: 0;
+}
+
+ul.categorias_offnav li.list_offnav{
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+ul.categorias_offnav li.list_offnav:hover{
+    background:#222222;
+}
+
+ul.categorias_offnav li.list_offnav a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+ul.categorias_offnav li.list_offnav a div.item_offnav{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 /*** HEADER ***/
@@ -216,11 +297,10 @@ button.btn-product h2{
     background: #424242;
     color: #ccc;
     border: none;
-    margin-top: 8px;
+    height: 50px;
     outline: none;
     padding-left: 8px;
-    position: relative;
-    top: 5px;
+    border-radius: 5px;
 }
 
 .input-ctrl input::placeholder{
@@ -809,6 +889,51 @@ footer .copyright-img img{
     height: 80%;
     max-width: 120px;
 }
+
+/***CART PAGE***/
+.bread{
+    display: block;
+    color: white;
+    font-size: 12px;
+}
+
+.bread a{
+    color: white;
+}
+
+.bread i{
+    margin: 0px 6px;
+}
+
+.cart-bread{
+    padding: 20px 0;
+    font-size: 1.4rem;
+}
+
+.cart-bread i{
+    color: red;
+    margin: 0px 6px;
+}
+
+.cart_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem 0rem 1rem;
+    flex-direction: column;
+}
+
+.cart_content p{
+    font-size: 14px;
+}
+
+.cart_content div.line{
+    width: 100px;
+    height: 2px;
+    background: red;
+    margin-top: 70px;
+}
+
 
 
 
