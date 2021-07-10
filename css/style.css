@@ -126,6 +126,38 @@ ul.categorias_offnav li.list_offnav a div.item_offnav{
     justify-content: space-between;
 }
 
+.hardware{
+    display: none;
+}
+
+.subitems_offnav{
+    list-style-type: none;
+    padding: 0;
+    background: #303030;
+}
+
+.subitems_offnav li{
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.subitems_offnav li:hover{
+    background:#222222;
+}
+
+.subitems_offnav li a{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
+
+.subitems_offnav li a span{
+    width: 100%;
+    display: block;
+}
+
+
+
 
 /*** HEADER ***/
 header.mobile{

@@ -18,4 +18,10 @@ $(function(){
         xhr.open('get', 'cart.html');//usa o metodo GET para pegar o cart.html
         xhr.send();
       });
+
+      $("#hw").on("click", function(){
+        console.log("funfando");
+        $(".hardware").slideToggle();
+        $("#icon_offnav").toggleClass("fa-chevron-up");
+      });
 })
