@@ -12,6 +12,10 @@ body{
     height: 4000px;
 }
 
+.hover-item-menu{
+    background-color: #303030;
+}
+
 .container{
     max-width: 1500px;
 }
@@ -121,13 +125,21 @@ ul.categorias_offnav li.list_offnav a{
     padding: 5px 0;
 }
 
-ul.categorias_offnav li.list_offnav a div.item_offnav{
+div.item_offnav{
     display: flex;
     justify-content: space-between;
 }
 
 .hardware{
     display: none;
+}
+
+.items_subitems_offnav_processador{
+    display: none;
+}
+
+.items_subitems_offnav_processador li{
+    padding: 12px 16px 12px 38px!important;
 }
 
 .subitems_offnav{
@@ -137,7 +149,7 @@ ul.categorias_offnav li.list_offnav a div.item_offnav{
 }
 
 .subitems_offnav li{
-    padding: 8px 16px;
+    padding: 12px 16px 12px 25px;
     cursor: pointer;
 }
 
@@ -154,6 +166,14 @@ ul.categorias_offnav li.list_offnav a div.item_offnav{
 .subitems_offnav li a span{
     width: 100%;
     display: block;
+}
+
+.perifericos{
+    display: none;
+}
+
+.computadores{
+    display: none;
 }
 
 

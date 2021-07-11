@@ -19,9 +19,12 @@ $(function(){
         xhr.send();
       });
 
-      $("#hw").on("click", function(){
+      $(this).find("li.list_offnav").on("click", function(){
         console.log("funfando");
-        $(".hardware").slideToggle();
-        $("#icon_offnav").toggleClass("fa-chevron-up");
+        $(".menu_event").find("#produtos_offnav").slideToggle();
+        $(this).find("#icon").toggleClass("fa-chevron-up");
+        $(this).toggleClass("hover-item-menu");
       });
+
+      
 })
