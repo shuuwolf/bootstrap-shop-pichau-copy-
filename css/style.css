@@ -51,7 +51,7 @@ body{
 /***MENU OFFCANVA***/
 
 .offcanvas{
-    max-width: 300px;
+    max-width: 330px;
     background:#424242;
 }
 
@@ -65,6 +65,7 @@ body{
 
 .offcanvas-body{  /*RESET*/
     padding: 0;
+    overflow-y: scroll; /*FIX BUG ON SCROLL*/
 }
 
 .offcanvas-body h6{
@@ -168,16 +169,9 @@ div.item_offnav{
     display: block;
 }
 
-.perifericos{
+#produtos_offnav{
     display: none;
 }
-
-.computadores{
-    display: none;
-}
-
-
-
 
 /*** HEADER ***/
 header.mobile{

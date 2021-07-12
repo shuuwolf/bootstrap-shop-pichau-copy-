@@ -16,11 +16,9 @@
 <body>
     <!-- MENU OFF CANVA -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <a href="https://www.pichau.com.br/"><img class="logo" src="images/logo-pichau-2021-dark.png" alt="pichau"></a>
-          <button style="color: white;" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
         <div class="offcanvas-body">
+            <a href="https://www.pichau.com.br/"><img class="logo" src="images/logo-pichau-2021-dark.png" alt="pichau"></a>
+            <button style="color: white;" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             <div class="mount">
                 <a class="mount-link" href="#">
                     <i class="fas fa-wrench"></i>
@@ -30,7 +28,7 @@
             <h6>CATEGORIAS</h6>
                 <ul class="categorias_offnav">
                     <div class="menu_event">
-                        <li id="hw" class="list_offnav">
+                        <li class="list_offnav">
                             <a href="#">
                                 <div class="item_offnav">
                                     <span>Hardware</span>
@@ -47,7 +45,7 @@
                                             <a href="#processador">
                                                 <div class="item_offnav">
                                                     <span>Processadores</span>
-                                                    <i id="icon_offnav_processador" class="fas fa-chevron-down"></i>
+                                                    <i id="icon" class="fas fa-chevron-down"></i>
                                                 </div><!-- /item_offnav -->
                                             </a>
                                         </li>
@@ -75,7 +73,7 @@
                     </div><!-- /menu_event -->
 
                     <div class="menu_event">
-                        <li id="perifericos" class="list_offnav">
+                        <li class="list_offnav">
                             <a href="#perifericos">
                                 <div class="item_offnav">
                                     <span>Periféricos</span>
@@ -108,28 +106,30 @@
                         <!--FIM MENU PERIFERICOS -->
                     </div><!-- /menu_event -->
 
-                    <li id="computadores" class="list_offnav">
-                        <a href="#computadores">
-                            <div class="item_offnav">
-                                <span>Computadores</span>
-                                <i id="icon_computadores" class="fas fa-chevron-down"></i>
-                            </div><!-- /item_offnav -->
-                        </a>
-                    </li><!-- /list_offnav -->
+                    <div class="menu_event">
+                        <li class="list_offnav">
+                            <a href="#computadores">
+                                <div class="item_offnav">
+                                    <span>Computadores</span>
+                                    <i id="icon" class="fas fa-chevron-down"></i>
+                                </div><!-- /item_offnav -->
+                            </a>
+                        </li><!-- /list_offnav -->
 
-                    <!-- MENU COMPUTADORES -->
-                        <div class="computadores">
-                            <div class="offnav_container">
-                                <ul class="subitems_offnav">
-                                    <li><a href="#ComputadorGamer"><span>Computadores Gamer</span></a></li>
-                                    <li><a href="#ComputadorWork"><span>Computadores Workstation</span></a></li>
-                                    <li><a href="#ComputadorHome"><span>Computadores Casa e Escritórios</span></a></li>
-                                </ul>
-                            </div><!-- /offnav_container -->
-                        </div><!-- /computadores -->
-                    <!--FIM MENU COMPUTADORES -->
+                        <!-- MENU COMPUTADORES -->
+                            <div id="produtos_offnav">
+                                <div class="offnav_container">
+                                    <ul class="subitems_offnav">
+                                        <li><a href="#ComputadorGamer"><span>Computadores Gamer</span></a></li>
+                                        <li><a href="#ComputadorWork"><span>Computadores Workstation</span></a></li>
+                                        <li><a href="#ComputadorHome"><span>Computadores Casa e Escritórios</span></a></li>
+                                    </ul>
+                                </div><!-- /offnav_container -->
+                            </div><!-- /computadores -->
+                        <!--FIM MENU COMPUTADORES -->
+                    </div><!-- /menu_event -->
 
-                    <li id="monitores" class="list_offnav">
+                    <li class="list_offnav">
                         <a href="#monitores">
                             <div class="item_offnav">
                                 <span>Monitores</span>
@@ -137,7 +137,7 @@
                         </a>
                     </li><!-- /list_offnav -->
 
-                    <li id="cadeiras_mesas" class="list_offnav">
+                    <li class="list_offnav">
                         <a href="#CadeirasMesas">
                             <div class="item_offnav">
                                 <span>Cadeiras e Mesas Gamer</span>
@@ -147,7 +147,7 @@
                     </li><!-- /list_offnav -->
 
                     <!-- MENU COMPUTADORES -->
-                        <div class="cadeiras_mesas">
+                        <div id="produtos_offnav">
                             <div class="offnav_container">
                                 <ul class="subitems_offnav">
                                     <li><a href="#CadeiraGamer"><span>Cadeiras Gamer</span></a></li>
@@ -158,7 +158,7 @@
                         </div><!-- /computadores -->
                     <!--FIM MENU COMPUTADORES -->
 
-                    <li id="eletronicos" class="list_offnav">
+                    <li class="list_offnav">
                         <a href="#Eletronico">
                             <div class="item_offnav">
                                 <span>Eletronicos</span>
@@ -168,7 +168,7 @@
                     </li><!-- /list_offnav -->
 
                     <!-- MENU COMPUTADORES -->
-                        <div class="eletronicos">
+                        <div id="produtos_offnav">
                             <div class="offnav_container">
                                 <ul class="subitems_offnav">
                                     <li><a href="#ConsoleAcessorios"><span>Console e Acessórios</span></a></li>

@@ -21,10 +21,8 @@ $(function(){
 
       $(this).find("li.list_offnav").on("click", function(){
         console.log("funfando");
-        $(".menu_event").find("#produtos_offnav").slideToggle();
         $(this).find("#icon").toggleClass("fa-chevron-up");
         $(this).toggleClass("hover-item-menu");
+        $(this).next().slideToggle(); //Proximo item na arvore apos a tag li que tu clicou.
       });
-
-      
 })

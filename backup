@@ -11,3 +11,32 @@ igual do site original.
 
 Ver como faz para implementar apenas uma parte no site, sem precisar ficar recriando tudo denovo
 talvez ajax?
+
+      $("#processador-menu-item").on("click", function(){
+        $("#icon_offnav_processador").toggleClass("fa-chevron-up");
+        $(".items_subitems_offnav_processador").slideToggle();
+      });
+
+      $("#perifericos").on("click", function(){
+        $(".perifericos").slideToggle();
+        $("#icon_perifericos").toggleClass("fa-chevron-up");
+        $("#perifericos").toggleClass("hover-item-menu");
+      });
+
+      $("#computadores").on("click", function(){
+        $(".computadores").slideToggle();
+        $("#icon_computadores").toggleClass("fa-chevron-up");
+        $("#computadores").toggleClass("hover-item-menu");
+      });
+
+      $("#cadeiras_mesas").on("click", function(){
+        $(".cadeiras_mesas").slideToggle();
+        $("#icon_cadeiras_mesas").toggleClass("fa-chevron-up");
+        $("#cadeiras_mesas").toggleClass("hover-item-menu");
+      });
+
+      $("#eletronicos").on("click", function(){
+        $(".eletronicos").slideToggle();
+        $("#icon_eletronico").toggleClass("fa-chevron-up");
+        $("#eletronicos").toggleClass("hover-item-menu");
+      });
