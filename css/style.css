@@ -95,7 +95,6 @@ body{
 }
 
 .mount{
-    margin-top:-10px;
     width: 100%;
     padding: 8px 16px;
 }
@@ -142,16 +141,8 @@ div.item_offnav{
     justify-content: space-between;
 }
 
-.hardware{
-    display: none;
-}
-
-.items_subitems_offnav_processador{
-    display: none;
-}
-
-.items_subitems_offnav_processador li{
-    padding: 12px 16px 12px 38px!important;
+.menu_padding_inside{
+    padding-left: 10px;
 }
 
 .subitems_offnav{
@@ -180,7 +171,7 @@ div.item_offnav{
     display: block;
 }
 
-#produtos_offnav{
+.produtos_offnav{ /*PARA A ANIMAÇÃO DO SLIDE TOGGLE FUNCIONAR MELHOR*/
     display: none;
 }
 
@@ -189,8 +180,10 @@ div.item_offnav{
 }
 
 .config-help .mount{
-    padding: 4px 16px;
+    padding: 0 16px;
 }
+
+/***FIM MENU OFFCANVA***/
 
 /*** HEADER ***/
 header.mobile{
@@ -817,17 +810,19 @@ section.pre-footer .location .atendimento-hrs p{
     width: 100%;
     margin: 0;
     background: white;
+    line-height: 50px;
+    color: #333;
 }
 
 .newsletter .input-ctrl input::placeholder{
-    color: black;
+    color: rgb(102, 102, 102);
     font-weight: normal;
 }
 
 .newsletter .btn-newsletter button{
     border: none;
     width: 100%;
-    padding: 13px;
+    padding: 16.5px;
     background: white;
     margin-top: 5px;
     position: relative;

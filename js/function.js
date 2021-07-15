@@ -19,7 +19,7 @@ $(function(){
         xhr.send();
       });
 
-      $(this).find("li.list_offnav").on("click", function(){
+      $("li.list_offnav").on("click", function(){
         console.log("funfando");
         $(this).find("#icon").toggleClass("fa-chevron-up");
         $(this).toggleClass("hover-item-menu");
