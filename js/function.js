@@ -20,9 +20,16 @@ $(function(){
       });
 
       $("li.list_offnav").on("click", function(){
-        console.log("funfando");
         $(this).find("#icon").toggleClass("fa-chevron-up");
         $(this).toggleClass("hover-item-menu");
         $(this).next().slideToggle(); //Proximo item na arvore apos a tag li que tu clicou.
+      });
+
+      $(".dark-mode-active").on("click", function(){
+        $(this).find("#dark").toggleClass("fa-moon");
+        $('body').toggleClass("white");
+        $(".logo").remove();
+        $(".logo-white").css("display", "block");
+        $(".input-ctrl").toggleClass("input-ctrl-white");
       });
 })

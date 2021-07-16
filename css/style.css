@@ -9,8 +9,21 @@ body{
     font-family: 'Roboto', sans-serif;
     color: white;
     font-weight: 400;
-    height: 4000px;
 }
+
+/**WHITE MODE***/
+
+body.white{
+    color: black;
+    background:white;
+}
+
+.logo-white{
+    display: none;
+    height: 50px;
+}
+
+/**FIM WHITE MODE***/
 
 .hover-item-menu{
     background-color: #303030;
@@ -258,7 +271,7 @@ header{
 
 .test-header a{
     text-decoration: none;
-    color: white;
+    color: inherit;
 }
 
 div.wwf{
@@ -268,6 +281,11 @@ div.wwf{
 div.wwf2{
     width: 100px;
     margin-left:30px;
+}
+
+div.wwf2 .dark-mode-active{
+    color: inherit;
+    text-decoration: none;
 }
 
 button.cart{
@@ -374,6 +392,48 @@ button.btn-product h2{
     border: 0;
 }
 
+/**MODO WHITE INPUT**/
+
+.input-ctrl-white{
+    background: #ffffff;
+    height: 50px;
+    position: relative;
+    top: 5px;
+    border-radius: 5px;
+}
+
+.input-ctrl-white h2{/***SEARCH ICON***/
+    float: right;
+    font-size: 16px;
+    position: relative;
+    top: 15px;
+    right: 10px;
+}
+
+.input-ctrl-white input{
+    width: 90%;
+    background: #ffffff;
+    color: rgb(179, 179, 179);
+    border: none;
+    height: 50px;
+    outline: none;
+    padding-left: 8px;
+    border-radius: 5px;
+}
+
+.input-ctrl-white input::placeholder{
+    color: rgb(182, 182, 182);
+    font-weight: bold;
+}
+
+.input-ctrl-white input:focus{
+    border: 0;
+}
+
+.input-ctrl-white input:active{
+    border: 0;
+}
+
 /*End Header*/
 
 /*** HEADER MOBILE ***/
@@ -459,6 +519,7 @@ section.bg-top .img-bg{
 
 section.boxes{
     padding: 30px 0;
+    color: white;
 }
 
 section.boxes .box-content{
@@ -631,6 +692,7 @@ section.pre-footer .atendimento .horario-loja-virtual{
     display:flex;
     align-items: center;
     margin-top: 10px;
+    color:white;
 }
 
 section.pre-footer .atendimento .horario-loja-virtual i{
@@ -667,6 +729,7 @@ section.pre-footer .location{
     justify-content: space-evenly;
     align-items: center;
     border-radius: 5px;
+    color:white;
 }
 
 section.pre-footer .location h2{
@@ -788,6 +851,7 @@ section.pre-footer .location .atendimento-hrs p{
     padding: 15px;
     position: relative;
     top: -40px;
+    color:white;
 }
 
 .newsletter p{
@@ -1007,12 +1071,6 @@ footer .copyright-img img{
     background: red;
     margin-top: 70px;
 }
-
-
-
-
-
-
 
 /*** Media Queries ***/
 
@@ -1235,4 +1293,6 @@ footer .copyright-img img{
     }
 }
 
-
+/*fixing font awesome order*/
+.fa-moon:before {
+    content: "\f186"; }
