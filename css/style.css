@@ -1,3 +1,10 @@
+@import url("white-mode-style.css");
+
+:root{
+    --background-black:#303030;
+    --text-color-white:#fff;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -5,9 +12,9 @@
 }
 
 body{
-    background:#303030;
+    background:var(--background-black);
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color:var(--text-color-white);
     font-weight: 400;
 }
 
@@ -41,13 +48,13 @@ body{
 }
 
 .wrapper .content p a{
-    color: white;
+    color:var(--text-color-white);
 }
 
 .cookie-button button{
     border:none;
     background: red;
-    color: white;
+    color:var(--text-color-white);
     padding: 5px;
     border-radius: 5px;
 }
@@ -58,22 +65,8 @@ body{
 
 /**FIM COOKIES***/
 
-/**WHITE MODE***/
-
-body.white{
-    color: black;
-    background:white;
-}
-
-.logo-white{
-    display: none;
-    height: 50px;
-}
-
-/**FIM WHITE MODE***/
-
 .hover-item-menu{
-    background-color: #303030;
+    background:var(--background-black);
 }
 
 .container{
@@ -95,7 +88,7 @@ body.white{
 }
 
 .button-to-top a{
-    color: white;
+    color:var(--text-color-white);
     text-decoration: none;
 }
 
@@ -148,7 +141,7 @@ body.white{
 }
 
 .btn-close {
-    color: white;
+    color:var(--text-color-white);
     background: url(../images/times-solid.png) center/1em auto no-repeat;
     position: relative;
     right: 15px;
@@ -164,12 +157,12 @@ body.white{
 }
 
 .mount:hover > .mount-link:hover{
-    color: white;
+    color:var(--text-color-white);
     text-decoration: none;
 }
 
 .mount-link{
-    color: white;
+    color:var(--text-color-white);
     text-decoration: none;
     padding: 8px 0px;
     display: block;
@@ -191,7 +184,7 @@ ul.categorias_offnav li.list_offnav:hover{
 }
 
 ul.categorias_offnav li.list_offnav a{
-    color: white;
+    color:var(--text-color-white);
     text-decoration: none;
     padding: 5px 0;
 }
@@ -208,7 +201,7 @@ div.item_offnav{
 .subitems_offnav{
     list-style-type: none;
     padding: 0;
-    background: #303030;
+    background:var(--background-black);
 }
 
 .subitems_offnav li{
@@ -221,7 +214,7 @@ div.item_offnav{
 }
 
 .subitems_offnav li a{
-    color: white;
+    color:var(--text-color-white);
     text-decoration: none;
     width: 100%;
 }
@@ -263,8 +256,11 @@ header{
     align-items: center;
     height: 60px;
     justify-content: flex-end;
-    position: relative;
-    right: 50px;
+    margin-right: 3rem;
+}
+
+.log-header a{
+    color: black;
 }
 
 .log-header a i{
@@ -277,20 +273,11 @@ header{
     background-color: red;
     border-radius: 25px;
     float: left;
-    color: black;
+    color: inherit;
 }
 
 .log-header a i#user{
-    width: 25px;
-    height: 25px;
-    font-size: 17px;
-    padding-left: 4.5px;
-    padding-top: 3px;
     margin-top: 5px;
-    background-color: red;
-    border-radius: 25px;
-    float: left;
-    color: black;
 }
 
 .log-header i#dark{
@@ -302,7 +289,7 @@ header{
     background-color: transparent;
     border-radius: 25px;
     float: left;
-    color: red;
+    color: red!important;
 }
 
 .test-header {
@@ -339,13 +326,13 @@ button.cart{
     display: flex;
     width: 210px;
     height: 60px;
-    background:green;
+    background:rgb(1, 201, 1);
     border: 1px solid green;
     border-radius: 5px;
     float: right;
     justify-content: space-between;
     padding: 10px;
-    color: white;
+    color:var(--text-color-white);
 }
 
 button.cart:hover{
@@ -380,7 +367,7 @@ button.btn-product{
     border: none;
     border-radius: 5px;
     height: 60px;
-    color: white;
+    color:var(--text-color-white);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -439,48 +426,6 @@ button.btn-product h2{
     border: 0;
 }
 
-/**MODO WHITE INPUT**/
-
-.input-ctrl-white{
-    background: #ffffff;
-    height: 50px;
-    position: relative;
-    top: 5px;
-    border-radius: 5px;
-}
-
-.input-ctrl-white h2{/***SEARCH ICON***/
-    float: right;
-    font-size: 16px;
-    position: relative;
-    top: 15px;
-    right: 10px;
-}
-
-.input-ctrl-white input{
-    width: 90%;
-    background: #ffffff;
-    color: rgb(179, 179, 179);
-    border: none;
-    height: 50px;
-    outline: none;
-    padding-left: 8px;
-    border-radius: 5px;
-}
-
-.input-ctrl-white input::placeholder{
-    color: rgb(182, 182, 182);
-    font-weight: bold;
-}
-
-.input-ctrl-white input:focus{
-    border: 0;
-}
-
-.input-ctrl-white input:active{
-    border: 0;
-}
-
 /*End Header*/
 
 /*** HEADER MOBILE ***/
@@ -509,11 +454,11 @@ button.btn-product h2{
 
 button.btn-product-mobile{
     width: 100px;
-    background-color: #303030;
+    background:var(--background-black);
     border: none;
     border-radius: 5px;
     height: 60px;
-    color: white;
+    color:var(--text-color-white);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -527,7 +472,7 @@ button.btn-product-mobile{
     align-items: center;
     background: transparent;
     border: none;
-    color: white;
+    color:var(--text-color-white);
     padding: 10px;
 }
 
@@ -541,7 +486,7 @@ button.btn-product-mobile{
     align-items: center;
     background: transparent;
     border: none;
-    color: white;
+    color:var(--text-color-white);
     padding: 10px;
 }
 
@@ -566,7 +511,7 @@ section.bg-top .img-bg{
 
 section.boxes{
     padding: 30px 0;
-    color: white;
+    color:var(--text-color-white);
 }
 
 section.boxes .box-content{
@@ -739,7 +684,7 @@ section.pre-footer .atendimento .horario-loja-virtual{
     display:flex;
     align-items: center;
     margin-top: 10px;
-    color:white;
+    color:var(--text-color-white);
 }
 
 section.pre-footer .atendimento .horario-loja-virtual i{
@@ -766,7 +711,7 @@ section.pre-footer .atendimento .horario-loja-virtual p strong{
 
 section.pre-footer .atendimento .horario-loja-virtual a{
     text-decoration: none;
-    color: white;
+    color:var(--text-color-white);
 }
 
 section.pre-footer .location{
@@ -776,7 +721,7 @@ section.pre-footer .location{
     justify-content: space-evenly;
     align-items: center;
     border-radius: 5px;
-    color:white;
+    color:var(--text-color-white);
 }
 
 section.pre-footer .location h2{
@@ -898,7 +843,7 @@ section.pre-footer .location .atendimento-hrs p{
     padding: 15px;
     position: relative;
     top: -40px;
-    color:white;
+    color:var(--text-color-white);
 }
 
 .newsletter p{
@@ -978,7 +923,7 @@ section.pre-footer .location .atendimento-hrs p{
 }
 
 .social-media h2:hover > i{
-    color: white;
+    color:var(--text-color-white);
 }
 
 .social-media h2 i{
@@ -1018,7 +963,7 @@ footer .copyright-img img{
 }
 
 .copyright-text span{
-    color: white;
+    color:var(--text-color-white);
     font-size: 14px;
 }
 
@@ -1078,12 +1023,12 @@ footer .copyright-img img{
 /***CART PAGE***/
 .bread{
     display: block;
-    color: white;
+    color:var(--text-color-white);
     font-size: 12px;
 }
 
 .bread a{
-    color: white;
+    color:var(--text-color-white);
 }
 
 .bread i{
@@ -1132,6 +1077,7 @@ main.form-login{
     width: 40px;
     height: 40px;
     margin: 0 auto;
+    color: black;
 }
 
 .login-header .account-icon-register{
@@ -1139,7 +1085,8 @@ main.form-login{
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    margin: 0 auto;
+    margin:0 auto;
+    color: black;
 }
 
 .login-header .account-icon-register h2{
@@ -1172,20 +1119,24 @@ main.form-login{
     margin:2rem 0 3rem 0;
 }
 
-.form-group .form-control{
-    background:#303030;
+.form-control{
+    background:var(--background-black);
     height: 60px;
-    color: white;
+    color:var(--text-color-white);
     border-color: #525252;
     margin-top: 1rem;
 }
 
-.form-group .form-control:hover{
+.form-control:hover{
     border-color: #ccc;
 }
 
-.form-group .form-control::placeholder{
+.form-control::placeholder{
     color: #ccc;
+}
+
+.form-control:focus{
+    box-shadow: none;
 }
 
 .form-check{
@@ -1195,10 +1146,14 @@ main.form-login{
 .form-check .form-check-input{
     float: none;
     margin-left: 0;
-    background-color: #303030;
+    background:var(--background-black);
     border-color: #ccc;
     height: 20px;
     width: 20px;
+}
+
+.form-check .form-check-input:focus{
+    box-shadow: none;
 }
 
 .form-check .form-check-input:checked{
@@ -1346,7 +1301,7 @@ main.form-login{
 }
 
 @media screen and (max-width:580px){
-    .logo{
+    .logo,.logo-white{
         height: 40px;
     }
 
@@ -1416,7 +1371,7 @@ main.form-login{
     }
 
     .social-media{
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
     }
 
@@ -1440,10 +1395,14 @@ main.form-login{
         height: 100%;
         max-width: 100%;
     }
+
+    .login-header .account-icon-register{
+        margin: 2rem auto 0px auto;
+    }
 }
 
 @media screen and (max-width:400px){
-    .logo{
+    .logo,.logo-white{
         height: 30px;
     }
 

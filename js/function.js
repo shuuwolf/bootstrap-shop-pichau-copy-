@@ -25,11 +25,20 @@ $(function(){
         $(this).next().slideToggle(); //Proximo item na arvore apos a tag li que tu clicou.
       });
 
-      $(".dark-mode-active").on("click", function(){
+      $(".dark-mode-active").on("click", function(){//Preciso dar uma pesquisada para reduzir esse codigo está dando agonia '-'//
+        $("#text-mode-change").toggleClass("white_dark")
         $(this).find("#dark").toggleClass("fa-moon");
         $('body').toggleClass("white");
-        $(".logo").remove();
-        $(".logo-white").css("display", "block");
-        $(".input-ctrl").toggleClass("input-ctrl-white");
+        $(".input-ctrl").toggleClass("input-white");
+        $(".form-control").toggleClass("input-white");
+        $(".form-check-input").toggleClass("input-white");
+        $(".logo").toggle();
+        $(".logo-white").toggle();
+        $(".btn-product-mobile").toggleClass("btn-white");
+        $(".sun-mobile").toggleClass("icon-black");
+        $(".cart-mobile").toggleClass("icon-black");
+        $(".account-icon").toggleClass("icon-white");
+        $(".account-icon-register").toggleClass("icon-white");
+        $(".log-header a i").toggleClass("icon-white");
       });
 })
