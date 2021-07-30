@@ -426,42 +426,33 @@
     </header>
 
     <main class="form-login">
-        <div class="container">
+        <div class="container-register">
             <div class="row">
-                <div class="col-sm-6 col-lg-4 offset-lg-2">
-                    <div class="login-header">
-                        <div class="account-icon"><h2><i class="fas fa-lock"></i></h2></div>
-                        <h1>Já tem uma conta?</h1>
-                        <p>Informe os seus dados abaixo para acessá-la.</p>
-                    </div><!-- /login-header -->
-                    <form action="POST">
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="inputEmailLogin" placeholder="E-mail *" required>
+                <div class="login-header">
+                    <div class="account-icon"><h2><i class="fa fa-user"></i></h2></div>
+                    <h1>Criar minha conta</h1>
+                    <p>Informe os seus dados abaixo para criar sua conta.</p>
+                </div><!-- /login-header -->
+                <form action="POST">
+                    <div class="row">
+                        <div class="col-md-6">
+                          <input type="text" class="form-control register-form" placeholder="First name" required>
                         </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="inputPassword" placeholder="Senha *" required>
+                        <div class="col-md-6">
+                          <input type="text" class="form-control register-form" placeholder="Last name" required>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="yes" id="myData">
-                            <label class="form-check-label" for="myData">
-                              Lembrar meus dados
-                            </label>
-                        </div><!-- /form-check -->
-                        <button id="login-button" class="btn btn-primary" type="submit">Acessar Conta</button>
-                        <a class="lost_password" href="#lostPassword">Esqueci minha senha</a>
-                    </form>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <div class="login-header">
-                        <div class="account-icon-register"><h2><i class="fa fa-user"></i></h2></div>
-                        <h1>Novo Cliente</h1>
-                        <p>Criar uma conta é fácil! Informe seus dados e uma senha para aproveitar todos os beneficios de ter uma conta.</p>
-                    </div><!-- /login-header -->
-                        <button id="login-button-register" class="btn btn-primary" type="submit">Cadastre-se</button>
-                </div>
+                        <div class="col-md-12">
+                            <select class="form-control register-form">
+                                <option selected>Escolha...</option>
+                                <option>Pessoa Física</option>
+                                <option>Pessoa Jurídica</option>
+                            </select>
+                          </div>
+                      </div>
+                </form>
             </div><!-- /row -->
         </div><!-- /container -->
-    </main><!-- /form-login -->
+    </main><!-- /form-register -->
 
     <section class="pre-footer">
         <div class="container">

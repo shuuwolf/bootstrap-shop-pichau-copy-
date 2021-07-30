@@ -1205,7 +1205,16 @@ main.form-login{
     color: red;
 }
 
+/*REGISTER PAGE*/
 
+.container-register{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.register-form{
+    height:40px;
+}
 
 
 /*** Media Queries ***/
