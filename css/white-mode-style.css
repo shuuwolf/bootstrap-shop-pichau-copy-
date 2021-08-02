@@ -69,4 +69,16 @@ button.btn-white{
     background:white;
 }
 
+.type-people-label-white{
+    background:white;
+}
+
+.text-black{
+    color: black!important;
+}
+
+.text-black a{
+    color: black!important;
+}
+
 /**FIM WHITE MODE***/

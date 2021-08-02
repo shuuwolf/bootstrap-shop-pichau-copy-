@@ -436,21 +436,54 @@
                 <form action="POST">
                     <div class="row">
                         <div class="col-md-6">
-                          <input type="text" class="form-control register-form" placeholder="First name" required>
+                          <input type="text" class="form-control register-form" placeholder="Nome" required>
                         </div>
                         <div class="col-md-6">
-                          <input type="text" class="form-control register-form" placeholder="Last name" required>
+                          <input type="text" class="form-control register-form" placeholder="Sobrenome" required>
                         </div>
+                    </div><!-- /row -->
+                    <div class="row">
                         <div class="col-md-12">
-                            <select class="form-control register-form">
+                            <label class="type-people-label">Quero me cadastrar como:*</label>
+                            <select class="form-control register-form color-fix text-white">
                                 <option selected>Escolha...</option>
                                 <option>Pessoa Física</option>
                                 <option>Pessoa Jurídica</option>
                             </select>
                           </div>
                       </div>
+                    </div><!-- /row -->
+                    <div class="row">
+                        <div class="col-md-6">
+                          <input type="number" class="form-control register-form" placeholder="CPF*" required>
+                        </div>
+                        <div class="col-md-6">
+                          <input type="number" class="form-control register-form" placeholder="RG" required>
+                        </div>
+                    </div><!-- /row -->
+                    <div class="row">
+                        <div class="col-md-12">
+                          <input type="email" class="form-control register-form" placeholder="E-mail*" required>
+                        </div>
+                        <div class="col-md-12">
+                          <input type="password" class="form-control register-form" placeholder="Senha*" required>
+                        </div>
+                    </div><!-- /row -->
+                    <div class="row">
+                        <div class="form-check register-check-fix">
+                            <input class="form-check-input" type="checkbox" value="yes" id="myData">
+                            <label class="form-check-labe text-white" for="myData">Aceito receber marketing da Pichau por e-mail</label>
+                        </div><!-- /form-check -->
+                    </div><!-- /row -->
+                    <div class="row">
+                        <div class="form-check register-check-fix">
+                            <input class="form-check-input" type="checkbox" value="yes" id="myData">
+                            <label class="form-check-label text-white" for="myData">Estou ciente e CONCORDO com os <a href="/termos">termos de aceite</a> e <a href="/politica">políticas de privacidade</a> da Pichau.</label>
+                        </div><!-- /form-check -->
+                    </div><!-- /row -->
+                    <button id="login-button" class="btn btn-primary" type="submit">Criar Conta</button>
+                        <a class="back_to_login text-white" href="account.html">voltar para o login</a>
                 </form>
-            </div><!-- /row -->
         </div><!-- /container -->
     </main><!-- /form-register -->
 

@@ -40,5 +40,7 @@ $(function(){
         $(".account-icon").toggleClass("icon-white");
         $(".account-icon-register").toggleClass("icon-white");
         $(".log-header a i").toggleClass("icon-white");
+        $(".type-people-label").toggleClass("type-people-label-white");
+        $(".text-white").toggleClass("text-black");
       });
 })

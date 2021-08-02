@@ -9,6 +9,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /*border: 2px solid red; pra ver oque ta dando scroll horizontal*/
 }
 
 body{
@@ -1208,14 +1209,69 @@ main.form-login{
 /*REGISTER PAGE*/
 
 .container-register{
-    max-width: 700px;
+    max-width: 570px;
     margin: 0 auto;
+}
+
+.container-register input{
+    margin-top: 30px;
 }
 
 .register-form{
     height:40px;
+    z-index:5;
 }
 
+.type-people-label{
+    position: relative;
+    bottom:-27px;
+    left: -37%;
+    font-size:12px;
+    z-index:6;
+    background:var(--background-black);
+    padding: 0px 3px;
+}
+
+.color-fix{
+    color:var(--text-color-white);
+    width: 40%;
+    padding-left: 12%;
+}
+
+.color-fix option{
+    background-color: #a0a0a0;
+}
+
+.register-check-fix{
+    display: flex;
+    align-items: center;
+}
+
+.register-check-fix input{
+    float: left;
+    margin: 0;
+}
+
+.register-check-fix label{
+    float: left;
+    margin: 0px 0px 0px 10px;
+    text-align: left;
+}
+
+.register-check-fix label a{
+    color: white;
+}
+
+.register-check-fix input{
+    float: left;
+}
+
+.back_to_login{
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+}
 
 /*** Media Queries ***/
 
