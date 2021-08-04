@@ -77,6 +77,14 @@ button.btn-white{
     color: black!important;
 }
 
+.text-black:focus{
+    background-color: white;
+}
+
+.text-black option{
+    background-color: #ffffff;
+}
+
 .text-black a{
     color: black!important;
 }

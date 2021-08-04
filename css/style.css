@@ -1238,8 +1238,12 @@ main.form-login{
     padding-left: 12%;
 }
 
+.color-fix:focus{
+    background-color: black;
+}
+
 .color-fix option{
-    background-color: #a0a0a0;
+    background-color: #303030;
 }
 
 .register-check-fix{
@@ -1363,6 +1367,11 @@ main.form-login{
         margin-left: 10px;
         max-width: 100px;
     }
+
+    .color-fix{
+        width: 100%;
+        padding-left: 39%;
+    }
 }
 
 @media screen and (max-width:580px){
@@ -1464,6 +1473,27 @@ main.form-login{
     .login-header .account-icon-register{
         margin: 2rem auto 0px auto;
     }
+
+    .login-header{
+        padding-right: 0;
+    }
+
+    .padding-fix{
+        padding-right: 0;
+    }
+
+    .container-register{
+        max-width: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .register-form{
+        height:40px;
+        z-index:5;
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width:400px){
