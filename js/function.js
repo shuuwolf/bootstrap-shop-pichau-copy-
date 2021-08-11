@@ -19,28 +19,24 @@ $(function(){
         xhr.send();
       });
 
+      /*** MENU LATERAL(OFF-NAV) ***/
       $("li.list_offnav").on("click", function(){
         $(this).find("#icon").toggleClass("fa-chevron-up");
         $(this).toggleClass("hover-item-menu");
         $(this).next().slideToggle(); //Proximo item na arvore apos a tag li que tu clicou.
       });
 
-      $(".dark-mode-active").on("click", function(){//Preciso dar uma pesquisada para reduzir esse codigo está dando agonia '-'//
-        $("#text-mode-change").toggleClass("white_dark")
-        $(this).find("#dark").toggleClass("fa-moon");
-        $('body').toggleClass("white");
-        $(".input-ctrl").toggleClass("input-white");
-        $(".form-control").toggleClass("input-white");
-        $(".form-check-input").toggleClass("input-white");
+      /*** MODO CLARO/ESCURO ***/
+      var body = document.getElementById("toggleMode")
+      $("#changeMode").on("click", function(){
+        if(body.hasAttribute("data-theme")){
+          body.removeAttribute("data-theme");
+        }else{
+          body.setAttribute("data-theme", "dark");
+        }
+        $("#changeMode").find("#dark").toggleClass("fa-moon");
         $(".logo").toggle();
         $(".logo-white").toggle();
-        $(".btn-product-mobile").toggleClass("btn-white");
-        $(".sun-mobile").toggleClass("icon-black");
-        $(".cart-mobile").toggleClass("icon-black");
-        $(".account-icon").toggleClass("icon-white");
-        $(".account-icon-register").toggleClass("icon-white");
-        $(".log-header a i").toggleClass("icon-white");
-        $(".type-people-label").toggleClass("type-people-label-white");
-        $(".text-white").toggleClass("text-black");
-      });
+        //document.body.toggleAttribute("data-theme");//Toggle nao funciona :/
+      })
 })

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br"> 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,9 +12,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css" integrity="sha512-3icgkoIO5qm2D4bGSUkPqeQ96LS8+ukJC7Eqhl1H5B2OJMEnFqLmNDxXVmtV/eq5M65tTDkUYS/Q0P4gvZv+yA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css"><!-- Normal Style -->
-    <link rel="stylesheet" href="css/white-mode-style.css"><!-- White Mode Style -->
 </head>
-<body id="black_mode">
+<body id="toggleMode" data-theme="dark">
     <!-- MENU OFF CANVA -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-body">
@@ -343,7 +342,7 @@
                         </div><!-- /wwf2 -->
 
                         <div class="wwf2">
-                            <a class="dark-mode-active" href="#">
+                            <a id="changeMode" href="#">
                                 <i id="dark" class="fas fa-sun"></i>
                                 <div style="text-align: center;" class="test-header">
                                         modo
@@ -402,7 +401,7 @@
                             <img class="logo-white" src="images/logo-pichau-2021-white (1).png" alt="pichau">
                         </a>
                         <div class="header-right-options">
-                            <button class="dark-mode-active sun-mobile">
+                            <button id="changeMode" class="dark-mode-active sun-mobile">
                                 <h2><i id="dark" class="fas fa-sun"></i></h2>
                             </button>
                             <button class="cart-mobile">
@@ -472,17 +471,17 @@
                     <div class="row">
                         <div class="form-check register-check-fix">
                             <input class="form-check-input" type="checkbox" value="yes" id="myData">
-                            <label class="form-check-label text-white" for="myData">Aceito receber marketing da Pichau por e-mail</label>
+                            <label class="form-check-label" for="myData">Aceito receber marketing da Pichau por e-mail</label>
                         </div><!-- /form-check -->
                     </div><!-- /row -->
                     <div class="row">
                         <div class="form-check register-check-fix">
                             <input class="form-check-input" type="checkbox" value="yes" id="myData">
-                            <label class="form-check-label text-white" for="myData">Estou ciente e CONCORDO com os <a href="/termos">termos de aceite</a> e <a href="/politica">políticas de privacidade</a> da Pichau.</label>
+                            <label class="form-check-label" for="myData">Estou ciente e CONCORDO com os <a href="/termos">termos de aceite</a> e <a href="/politica">políticas de privacidade</a> da Pichau.</label>
                         </div><!-- /form-check -->
                     </div><!-- /row -->
                     <button id="login-button" class="btn btn-primary" type="submit">Criar Conta</button>
-                        <a class="back_to_login text-white" href="account.html">voltar para o login</a>
+                        <a class="back_to_login href="account.html">voltar para o login</a>
                 </form>
         </div><!-- /container -->
     </main><!-- /form-register -->

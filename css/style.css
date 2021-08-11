@@ -1,8 +1,14 @@
-@import url("white-mode-style.css");
 
 :root{
     --background-black:#303030;
     --text-color-white:#fff;
+}
+
+body[data-theme='dark']{
+    --bg:#303030;
+    --text-color:#fff;
+    --icon-color:#000;
+    --input_bg:#464646;
 }
 
 *{
@@ -13,9 +19,9 @@
 }
 
 body{
-    background:var(--background-black);
+    background:var(--bg);
     font-family: 'Roboto', sans-serif;
-    color:var(--text-color-white);
+    color:var(--text-color);
     font-weight: 400;
 }
 
@@ -46,6 +52,7 @@ body{
     font-size: 14px;
     font-weight: lighter;
     margin: 0;
+    color: white;
 }
 
 .wrapper .content p a{
@@ -67,7 +74,7 @@ body{
 /**FIM COOKIES***/
 
 .hover-item-menu{
-    background:var(--background-black);
+    background:var(--bg);
 }
 
 .container{
@@ -89,7 +96,7 @@ body{
 }
 
 .button-to-top a{
-    color:var(--text-color-white);
+    color:var(--text-color);
     text-decoration: none;
 }
 
@@ -142,7 +149,7 @@ body{
 }
 
 .btn-close {
-    color:var(--text-color-white);
+    color:var(--text-color);
     background: url(../images/times-solid.png) center/1em auto no-repeat;
     position: relative;
     right: 15px;
@@ -158,12 +165,12 @@ body{
 }
 
 .mount:hover > .mount-link:hover{
-    color:var(--text-color-white);
+    color:var(--text-color);
     text-decoration: none;
 }
 
 .mount-link{
-    color:var(--text-color-white);
+    color:var(--text-color);
     text-decoration: none;
     padding: 8px 0px;
     display: block;
@@ -185,7 +192,7 @@ ul.categorias_offnav li.list_offnav:hover{
 }
 
 ul.categorias_offnav li.list_offnav a{
-    color:var(--text-color-white);
+    color:var(--text-color);
     text-decoration: none;
     padding: 5px 0;
 }
@@ -202,7 +209,7 @@ div.item_offnav{
 .subitems_offnav{
     list-style-type: none;
     padding: 0;
-    background:var(--background-black);
+    background:var(--bg);
 }
 
 .subitems_offnav li{
@@ -215,7 +222,7 @@ div.item_offnav{
 }
 
 .subitems_offnav li a{
-    color:var(--text-color-white);
+    color:var(--text-color);
     text-decoration: none;
     width: 100%;
 }
@@ -249,6 +256,11 @@ header{
 
 .logo{
     height: 50px;
+}
+
+.logo-white{
+    height: 50px;
+    display: none;
 }
 
 .log-header{
@@ -293,11 +305,16 @@ header{
     color: red!important;
 }
 
+#changeMode{
+    text-decoration: none;
+}
+
 .test-header {
     display: flex;
     text-transform: uppercase;
     flex-direction: column;
     text-align: left;
+    color: var(--text-color);
 }
 
 .test-header strong{
@@ -306,7 +323,7 @@ header{
 
 .test-header a{
     text-decoration: none;
-    color: inherit;
+    color: var(--text-color);
 }
 
 div.wwf{
@@ -333,7 +350,7 @@ button.cart{
     float: right;
     justify-content: space-between;
     padding: 10px;
-    color:var(--text-color-white);
+    color:white;
 }
 
 button.cart:hover{
@@ -368,7 +385,7 @@ button.btn-product{
     border: none;
     border-radius: 5px;
     height: 60px;
-    color:var(--text-color-white);
+    color:white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -388,7 +405,7 @@ button.btn-product h2{
 }
 
 .input-ctrl{
-    background: #424242;
+    background: var(--input_bg);
     height: 50px;
     position: relative;
     top: 5px;
@@ -405,7 +422,7 @@ button.btn-product h2{
 
 .input-ctrl input{
     width: 90%;
-    background: #424242;
+    background: var(--input_bg);
     color: #ccc;
     border: none;
     height: 50px;
@@ -416,7 +433,7 @@ button.btn-product h2{
 
 .input-ctrl input::placeholder{
     color: rgb(143, 143, 143);
-    font-weight: bold;
+    font-weight: lighter;
 }
 
 .input-ctrl input:focus{
@@ -455,11 +472,11 @@ button.btn-product h2{
 
 button.btn-product-mobile{
     width: 100px;
-    background:var(--background-black);
+    background:var(--bg);
     border: none;
     border-radius: 5px;
     height: 60px;
-    color:var(--text-color-white);
+    color:var(--text-color);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -473,7 +490,7 @@ button.btn-product-mobile{
     align-items: center;
     background: transparent;
     border: none;
-    color:var(--text-color-white);
+    color:var(--text-color);
     padding: 10px;
 }
 
@@ -1078,7 +1095,7 @@ main.form-login{
     width: 40px;
     height: 40px;
     margin: 0 auto;
-    color: black;
+    color: var(--icon-color);
 }
 
 .login-header .account-icon-register{
@@ -1087,7 +1104,7 @@ main.form-login{
     width: 40px;
     height: 40px;
     margin:0 auto;
-    color: black;
+    color: var(--icon-color);
 }
 
 .login-header .account-icon-register h2{
@@ -1098,6 +1115,8 @@ main.form-login{
     width: 40px;
     height: 40px;
     margin: 0;
+    color: white!important;
+    color: var(--icon-color);
 }
 
 .login-header .account-icon h2{
@@ -1108,6 +1127,8 @@ main.form-login{
     width: 40px;
     height: 40px;
     margin: 0;
+    color: white!important;
+    color: var(--icon-color);
 }
 
 .login-header h1{
