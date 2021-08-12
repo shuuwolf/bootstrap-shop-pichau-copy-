@@ -2,6 +2,9 @@
 :root{
     --background-black:#303030;
     --text-color-white:#fff;
+    --icon-color:rgb(255, 255, 255);
+    --bg:#ffffff;
+    --hoverBg:#ffffff;
 }
 
 body[data-theme='dark']{
@@ -9,6 +12,14 @@ body[data-theme='dark']{
     --text-color:#fff;
     --icon-color:#000;
     --input_bg:#464646;
+    --hoverBg:#222222;
+}
+
+body[data-theme='light']{/*NAO FUNCIONA '-'*/
+    --bg:#ffffff;
+    --text-color:rgb(0, 0, 0);
+    --icon-color:rgb(255, 255, 255);
+    --input_bg:#dcdcdc;
 }
 
 *{
@@ -113,7 +124,7 @@ body{
 
 .offcanvas{
     max-width: 320px;
-    background:#424242;
+    background:var(--bg);
 }
 /*
 .offcanvas-header{  RESET
@@ -131,6 +142,10 @@ body{
 }
 
 .offcanvas-body .logo{
+    margin: 15px 0px 0px 15px;
+}
+
+.offcanvas-body .logo-white{
     margin: 15px 0px 0px 15px;
 }
 
@@ -161,7 +176,7 @@ body{
 }
 
 .mount:hover{
-    background: #222222;
+    background:var(--hoverBg);
 }
 
 .mount:hover > .mount-link:hover{
@@ -188,7 +203,7 @@ ul.categorias_offnav li.list_offnav{
 }
 
 ul.categorias_offnav li.list_offnav:hover{
-    background:#222222;
+    background:var(--hoverBg);
 }
 
 ul.categorias_offnav li.list_offnav a{
@@ -218,7 +233,7 @@ div.item_offnav{
 }
 
 .subitems_offnav li:hover{
-    background:#222222;
+    background:var(--hoverBg);
 }
 
 .subitems_offnav li a{
@@ -273,7 +288,7 @@ header{
 }
 
 .log-header a{
-    color: black;
+    color: var(--icon-color);
 }
 
 .log-header a i{
@@ -1115,7 +1130,6 @@ main.form-login{
     width: 40px;
     height: 40px;
     margin: 0;
-    color: white!important;
     color: var(--icon-color);
 }
 
@@ -1127,7 +1141,6 @@ main.form-login{
     width: 40px;
     height: 40px;
     margin: 0;
-    color: white!important;
     color: var(--icon-color);
 }
 
@@ -1142,7 +1155,7 @@ main.form-login{
 }
 
 .form-control{
-    background:var(--background-black);
+    background:var(--bg);
     height: 60px;
     color:var(--text-color-white);
     border-color: #525252;
@@ -1168,7 +1181,7 @@ main.form-login{
 .form-check .form-check-input{
     float: none;
     margin-left: 0;
-    background:var(--background-black);
+    background:var(--bg);
     border-color: #ccc;
     height: 20px;
     width: 20px;
@@ -1246,15 +1259,16 @@ main.form-login{
 .type-people-label{
     position: relative;
     bottom:-27px;
-    left: -37%;
+    left: -34%;
     font-size:12px;
     z-index:6;
-    background:var(--background-black);
+    background:var(--bg);
     padding: 0px 3px;
+    color: #ccc;
 }
 
 .color-fix{
-    color:var(--text-color-white);
+    color:#ccc;
     width: 40%;
     padding-left: 12%;
 }
@@ -1281,10 +1295,11 @@ main.form-login{
     float: left;
     margin: 0px 0px 0px 10px;
     text-align: left;
+    width: 100%;
 }
 
 .register-check-fix label a{
-    color: white;
+    color: var(--text-color);
 }
 
 .register-check-fix input{
@@ -1292,7 +1307,7 @@ main.form-login{
 }
 
 .back_to_login{
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     margin-top: 10px;
     display: block;
