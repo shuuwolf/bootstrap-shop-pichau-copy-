@@ -28,13 +28,14 @@ $(function(){
 
       /*** MODO CLARO/ESCURO ***/
       var body = document.getElementById("toggleMode")
-      $("#changeMode").on("click", function(){
+      $(".changeMode").on("click", function(){
+        console.log("funfando!");
         if(body.hasAttribute("data-theme")){
           body.removeAttribute("data-theme");
         }else{
           body.setAttribute("data-theme", "dark");
         }
-        $("#changeMode").find("#dark").toggleClass("fa-moon");
+        $(".changeMode").find("#dark").toggleClass("fa-moon");
         $(".logo").toggle();
         $(".logo-white").toggle();
         //document.body.toggleAttribute("data-theme");//Toggle nao funciona :/

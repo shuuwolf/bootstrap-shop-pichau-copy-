@@ -5,6 +5,8 @@
     --icon-color:rgb(255, 255, 255);
     --bg:#ffffff;
     --hoverBg:#ffffff;
+    --content-change:"CLARO";
+    --input_bg:#ffffff;
 }
 
 body[data-theme='dark']{
@@ -13,13 +15,7 @@ body[data-theme='dark']{
     --icon-color:#000;
     --input_bg:#464646;
     --hoverBg:#222222;
-}
-
-body[data-theme='light']{/*NAO FUNCIONA '-'*/
-    --bg:#ffffff;
-    --text-color:rgb(0, 0, 0);
-    --icon-color:rgb(255, 255, 255);
-    --input_bg:#dcdcdc;
+    --content-change:"ESCURO";
 }
 
 *{
@@ -107,7 +103,7 @@ body{
 }
 
 .button-to-top a{
-    color:var(--text-color);
+    color:var(--icon-color);
     text-decoration: none;
 }
 
@@ -288,7 +284,7 @@ header{
 }
 
 .log-header a{
-    color: var(--icon-color);
+    color: var(--text-color);
 }
 
 .log-header a i{
@@ -301,7 +297,7 @@ header{
     background-color: red;
     border-radius: 25px;
     float: left;
-    color: inherit;
+    color: var(--icon-color);
 }
 
 .log-header a i#user{
@@ -320,8 +316,14 @@ header{
     color: red!important;
 }
 
-#changeMode{
+.changeMode{
     text-decoration: none;
+    color: var(--text-color);
+}
+
+.changeMode:active,
+.changeMode:visited{
+    color: inherit;
 }
 
 .test-header {
@@ -353,6 +355,14 @@ div.wwf2{
 div.wwf2 .dark-mode-active{
     color: inherit;
     text-decoration: none;
+}
+
+#text-mode-change{
+    color: var(--text-color);
+}
+
+#text-mode-change::before{
+    content:var(--content-change);
 }
 
 button.cart{
@@ -483,6 +493,7 @@ button.btn-product h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    width:7rem;
 }
 
 button.btn-product-mobile{
@@ -519,7 +530,7 @@ button.btn-product-mobile{
     align-items: center;
     background: transparent;
     border: none;
-    color:var(--text-color-white);
+    color:var(--text-color);
     padding: 10px;
 }
 
@@ -1268,17 +1279,22 @@ main.form-login{
 }
 
 .color-fix{
-    color:#ccc;
+    color:var(--text-color);
     width: 40%;
     padding-left: 12%;
 }
 
+.color-fix::placeholder{
+    color:var(--text-color);
+}
+
 .color-fix:focus{
-    background-color: black;
+    background-color: var(--input_bg);
 }
 
 .color-fix option{
-    background-color: #303030;
+    background-color: var(--input_bg);
+    color:var(--text-color);
 }
 
 .register-check-fix{
@@ -1407,6 +1423,10 @@ main.form-login{
     .color-fix{
         width: 100%;
         padding-left: 39%;
+    }
+
+    .changeMode i#dark{
+        font-size: 25px;
     }
 }
 
